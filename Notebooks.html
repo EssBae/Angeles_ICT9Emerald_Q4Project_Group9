@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notebooks - OB Montessori</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <img src="OBMC 60 Icon_Circle.png" alt="Logo" class="sidebar-logo">
+        <ul>
+            <li><a href="Dashboard.html"><img src="Dashboard.png" class="sidebar-icon"> Dashboard</a></li>
+            <li><a href="Notebooks.html" class="active"><img src="Notebooks.png" class="sidebar-icon"> Notebooks</a></li>
+            <li><a href="Tasks.html"><img src="Tasks.png" class="sidebar-icon"> Tasks</a></li>
+            <li><a href="Profile.html"><img src="Profile.png" class="sidebar-icon"> Profile</a></li>
+           
+        </ul>
+        <div class="logout-container">
+            <a href="index.html" class="logout-btn"><img src="Logout.png" alt="out"> Logout</a>
+        </div>
+    </nav>
+
+    <main class="content">
+    <header>
+        <h1>Notebooks</h1>
+        <span>SY 2025-2026</span>
+    </header>
+
+    <p><b>9 Classes</b><br>Select a subject</p>
+
+<div class="grid-container">
+
+    <!-- fil -->
+    <div class="grid-item" onclick="openNotebook('Filipino')">
+        <div class="image-container">
+            <img src="FIL.jpg" alt="Filipino">
+        </div>
+        <div class="grid-text">
+            <h3>Filipino</h3>
+            <p>9-Emerald SY 2025-2026</p>
+            <small>WINMHAR SALAZAR</small>
+        </div>
+    </div>
+
+    <!-- eng -->
+    <div class="grid-item" onclick="openNotebook('English')">
+        <div class="image-container">
+            <img src="ENG.jpg" alt="English">
+        </div>
+        <div class="grid-text">
+            <h3>English</h3>
+            <p>9-Emerald SY 2025-2026</p>
+            <small>ROGELIO JR ALEGRID</small>
+        </div>
+    </div>
+
+    <!-- math -->
+    <div class="grid-item" onclick="openNotebook('Math')">
+        <div class="image-container">
+            <img src="MATH.jpg" alt="Math">
+        </div>
+        <div class="grid-text">
+            <h3>Math</h3>
+            <p>9-Emerald SY 2025-2026</p>
+            <small>ANGELINA CRISTOBAL</small>
+        </div>
+    </div>
+
+    <!-- SS -->
+    <div class="grid-item" onclick="openNotebook('Social Studies')">
+        <div class="image-container">
+            <img src="SS.jpg" alt="Social Studies">
+        </div>
+        <div class="grid-text">
+            <h3>Social Studies</h3>
+            <p>9-Emerald SY 2025-2026</p>
+            <small>RUEL ROQUE</small>
+        </div>
+    </div>
+
+    <!-- sci -->
+    <div class="grid-item" onclick="openNotebook('Science')">
+        <div class="image-container">
+            <img src="SCI.jpg" alt="Science">
+        </div>
+        <div class="grid-text">
+            <h3>Science</h3>
+            <p>9-Emerald SY 2025-2026</p>
+            <small>AILENE GALANG</small>
+        </div>
+    </div>
+
+    <!-- ICT -->
+    <div class="grid-item" onclick="openNotebook('ICT')">
+        <div class="image-container">
+            <img src="ICT.jpg" alt="ICT">
+        </div>
+        <div class="grid-text">
+            <h3>ICT</h3>
+            <p>9-Emerald SY 2025-2026</p>
+            <small>LUISITO BALAJADIA</small>
+        </div>
+    </div>
+
+    <!-- VE -->
+    <div class="grid-item" onclick="openNotebook('Values Education')">
+        <div class="image-container">
+            <img src="VE.jpg" alt="Values Education">
+        </div>
+        <div class="grid-text">
+            <h3>Values Education</h3>
+            <p>9-Emerald SY 2025-2026</p>
+            <small>SEAN PATRICK MERCADO</small>
+        </div>
+    </div>
+
+    <!-- music -->
+    <div class="grid-item" onclick="openNotebook('Music & Arts')">
+        <div class="image-container">
+            <img src="MUSIC.jpg" alt="Music & Arts">
+        </div>
+        <div class="grid-text">
+            <h3>Music & Arts</h3>
+            <p>9-Emerald SY 2025-2026</p>
+            <small>AMELIA AGUIRRE</small>
+        </div>
+    </div>
+
+    <!-- TLE -->
+    <div class="grid-item" onclick="openNotebook('TLE')">
+        <div class="image-container">
+            <img src="TLE.jpg" alt="TLE">
+        </div>
+        <div class="grid-text">
+            <h3>TLE</h3>
+            <p>9-Emerald SY 2025-2026</p>
+            <small>ROSELLE SARMIENTO</small>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+    <footer class="main-footer">
+        <p>Bae & Santos² | 9 - Emerald © 2026</p>
+        <small>Source:Shutter.com.flaticon.com, AI:ChatGPT.OBMC</small>
+    </footer>
+</main>
+<div id="notebookPopup" class="modal">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        
+        <h2 id="popupTitle"></h2>
+        <img id="popupImage" src="" alt="">
+        <div id="popupDesc"></div>
+    </div>
+</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

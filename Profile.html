@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile - OB Montessori</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <img src="OBMC 60 Icon_Circle.png" alt="Logo" class="sidebar-logo">
+        <ul>
+            <li><a href="Dashboard.html"><img src="Dashboard.png" class="sidebar-icon"> Dashboard</a></li>
+            <li><a href="Notebooks.html"><img src="Notebooks.png" class="sidebar-icon"> Notebooks</a></li>
+            <li><a href="Tasks.html"><img src="Tasks.png" class="sidebar-icon"> Tasks</a></li>
+            <li><a href="Profile.html" class="active"><img src="Profile.png" class="sidebar-icon"> Profile</a></li>
+            
+        </ul>
+        <div class="logout-container">
+            <a href="index.html" class="logout-btn"><img src="Logout.png" alt="out"> Logout</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <header>
+            <h1>Profile</h1>
+            <span>Student Information</span>
+        </header>
+        
+        <div class="card profile-wrap" style="padding:0;">
+            <div class="profile-left">
+                <div class="profile-avatar"><img src="icon.jpg" alt="Avatar"></div>
+                
+                <div class="file-upload">
+                    <label for="uploadPFP" class="upload-btn">Choose File</label>
+                    <input type="file" id="uploadPFP" accept="image/*">
+                    <span id="fileName">No file chosen</span>
+                </div>
+
+                <h2 id="studentName" contenteditable="true">JAVA PYTHON</h2>
+                <p>Student</p>
+
+            </div>
+            <div class="profile-right">
+                <h1 class="profile-title">Student<br>Information</h1>
+                <p>Student ID:<br><b>1504983384</b></p>
+                <p>Email Address:<br><b>No Email Address</b></p>
+                <p>Gender:<br><b>N/A</b></p> <br>
+                <button class="action-btn" onclick="changePassAlert()">Change Password</button>
+            </div>
+        </div>
+
+        <button onclick="resetAllStorage()" class="reset-btn">
+            Reset All Data
+        </button>
+
+        <footer class="main-footer">
+    <p>Bae & Santos² | 9 - Emerald © 2026</p>
+    <small>Source:Shutter.com.flaticon.com, AI:ChatGPT.OBMC</small>
+</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

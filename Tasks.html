@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - OB Montessori</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <img src="OBMC 60 Icon_Circle.png" alt="Logo" style="width: 100%;">
+        </div>
+        
+        <ul>
+            <li><a href="Dashboard.html"><img src="Dashboard.png" class="sidebar-icon"> Dashboard</a></li>
+            <li><a href="Notebooks.html"><img src="Notebooks.png" class="sidebar-icon"> Notebooks</a></li>
+            <li><a href="Tasks.html" class="active"><img src="Tasks.png" class="sidebar-icon"> Tasks</a></li>
+            <li><a href="Profile.html"><img src="Profile.png" class="sidebar-icon"> Profile</a></li>
+            
+        </ul>
+
+        <div class="logout-container">
+            <a href="index.html" class="logout-btn"><img src="Logout.png" alt="out"> Logout</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <header>
+            <h1>Tasks</h1>
+            <span class="status">Ongoing</span>
+        </header>
+
+        <p id="task-text">Choose a task</p>
+        
+       
+        <div class="tasks-grid">
+            <!-- VE -->
+            <div class="task-card">
+                <h2>Music & Arts</h2>
+                <h3>Quarterly Project</h3>
+                <p>Deadline: May 8, 2026 | 5:00 PM</p>
+                <input type="file" id="fileInput" hidden>
+                <button class="submit-btn">Submit File</button>
+                <p id="file-status">No file selected</p>
+            </div>
+
+            <!-- SS-->
+            <div class="task-card">
+                <h2>Filipino</h2>
+                <h3>Quarterly Project</h3>
+                <p>Deadline: May 11, 2026 | 5:00 PM</p>
+                <input type="file" id="fileInput" hidden>
+                <button class="submit-btn">Submit File</button>
+                <p id="file-status">No file selected</p>
+            </div>
+
+            <!-- ICT -->
+            <div class="task-card">
+                <h2>ICT</h2>
+                <h3>Quarterly Project</h3>
+                <p>Deadline: May 8, 2026 | 11:59 PM</p>
+                <input type="file" id="fileInput" hidden>
+                <button class="submit-btn">Submit File</button>
+                <p id="file-status">No file selected</p>
+            </div>
+        </div>
+
+        <!-- Footer Info -->
+        <footer class="main-footer">
+            <p>Bae & Santos² | 9 - Emerald © 2026</p>
+            <small>Source:Shutter.com.flaticon.com, AI:ChatGPT.OBMC</small>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
